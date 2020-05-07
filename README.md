@@ -240,17 +240,58 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
     }
 }
 ```
-## Performance Evaluation 1
+## MP.7 Performance Evaluation 1
 Count the number of keypoints on the preceding vehicle for all 10 images for all the detectors implemented.
 
- | Detector Type | Image 0 | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Image 7 | Image 8 | Image 9 | Average | Neighborhood Size |
- | ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------------------------ |
- | SHITOMASI | 125 | 118 | 123 | 120 | 120 | 113 | 114 | 123 | 111 | 112 | 108 | 4 |
- | HARRIS | 17 | 14 | 19 | 22 | 26 | 47 | 18 | 33 | 27 | 35 | 26 | 6 |
- | FAST | 419 | 427 | 404 | 423 | 386 | 414 | 418 | 406 | 396 | 401 | 434 | 7 |
- | BRISK | 264 | 282 | 282 | 277 | 297 | 279 | 289 | 272 | 266 | 254 | 276 | 8.4 - 16.5484 |
- | ORB | 92 | 102 | 106 | 113 | 109 | 125 | 130 | 129 | 127 | 128 | 116 | 31 |
- | AKAZE | 166 | 157 | 161 | 155 | 163 | 164 | 173 | 175 | 177 | 179 | 168 | 8 |
- | SIFT | 138 | 132 | 124 | 137 | 134 | 140 | 137 | 148 | 159 | 137 | 139 | 1.89 - 5.10 |
+| Detector Type | Image 0 | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Image 7 | Image 8 | Image 9 | Average | Neighborhood Size |
+| ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------------------------ |
+| SHITOMASI | 125 | 118 | 123 | 120 | 120 | 113 | 114 | 123 | 111 | 112 | 108 | 4 |
+| HARRIS | 17 | 14 | 19 | 22 | 26 | 47 | 18 | 33 | 27 | 35 | 26 | 6 |
+| FAST | 419 | 427 | 404 | 423 | 386 | 414 | 418 | 406 | 396 | 401 | 434 | 7 |
+| BRISK | 264 | 282 | 282 | 277 | 297 | 279 | 289 | 272 | 266 | 254 | 276 | 8.4 - 16.5484 |
+| ORB | 92 | 102 | 106 | 113 | 109 | 125 | 130 | 129 | 127 | 128 | 116 | 31 |
+| AKAZE | 166 | 157 | 161 | 155 | 163 | 164 | 173 | 175 | 177 | 179 | 168 | 8 |
+| SIFT | 138 | 132 | 124 | 137 | 134 | 140 | 137 | 148 | 159 | 137 | 139 | 1.89 - 5.10 |
 
 From above table, it is clearly evident that the FAST developed highest number of keypoint detections whereas HARRIS developed lowest number of keypoint detections.
+
+## MP.8 Performance Evaluation 2
+Count the number of matched keypoints for all 10 images using all possible combinations of detectors and descriptors. In the matching step, the BF approach is used with the descriptor distance ratio set to 0.8.
+
+| Detector Type | Descriptor Type | NMP Img 0 | NMP Img 1 | NMP Img 2 | NMP Img 3 | NMP Img 4 | NMP Img 5 | NMP Img 6 | NMP Img 7 | NMP Img 8 |
+| ------------- | --------------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| SHITOMASI | BRISK | 95 | 88 | 80 | 90 | 82 | 79 | 85 | 86 | 82 | 
+| HARRIS | BRISK | 12 | 10 | 14 | 16 | 16 | 17 | 15 | 22 | 21 |
+| FAST | BRISK | 256 | 243 | 241 | 239 | 215 | 251 | 248 | 243 | 247 |
+| BRISK | BRISK | 171 | 176 | 157 | 176 | 174 | 188 | 173 | 171 | 184 | 
+| ORB | BRISK | 73 | 74 | 79 | 85 | 79 | 92 | 90 | 88 | 91 |
+| AKAZE | BRISK | 137 | 125 | 129 | 129 | 131 | 132 | 142 | 146 | 144 |
+| SIFT | BRISK | 64 | 66 | 62 | 66 | 59 | 64 | 64 | 67 | 80 |
+| SHITOMASI | SIFT | 112 | 109 | 104 | 103 | 99 | 101 | 96 | 106 | 97 |
+| HARRIS | SIFT | 14 | 11 | 16 | 20 | 21 | 23 | 13 | 24 | 23 |
+| FAST | SIFT | 316 | 325 | 297 | 311 | 291 | 326 | 315 | 300 | 301 |
+| BRISK | SIFT | 182 | 193 | 169 | 183 | 171 | 195 | 194 | 176 | 183 |
+| ORB | SIFT | 67 | 79 | 78 | 79 | 82 | 95 | 95 | 94 | 94 |
+| AKAZE | SIFT | 134 | 134 | 130 | 136 | 137 | 147 | 147 | 154 | 151 |
+| SIFT | SIFT | 82 | 81 | 85 | 93 | 90 | 81 | 82 | 102 | 104 |
+| SHITOMASI | SHITOMASI |  |  |  |  |  |  |  |  |  |
+| HARRIS | SHITOMASI |  |  |  |  |  |  |  |
+| FAST | SHITOMASI |  |  |  |  |  |  |  |
+| BRISK | SHITOMASI |  |  |  |  |  |  |  |
+| ORB | SHITOMASI |  |  |  |  |  |  |  |
+| AKAZE | SHITOMASI |  |  |  |  |  |  |  |
+| SIFT | SHITOMASI |  |  |  |  |  |  |  |
+| SHITOMASI | ORB |  |  |  |  |  |  |  |
+| HARRIS | ORB |  |  |  |  |  |  |  |
+| FAST | ORB |  |  |  |  |  |  |  |
+| BRISK | ORB |  |  |  |  |  |  |  |
+| ORB | ORB |  |  |  |  |  |  |  |
+| AKAZE | ORB |  |  |  |  |  |  |  |
+| SIFT | ORB |  |  |  |  |  |  |  |
+| SHITOMASI | HARRIS |  |  |  |  |  |  |  |
+| HARRIS | HARRIS |  |  |  |  |  |  |  |
+| FAST | HARRIS |  |  |  |  |  |  |  |
+| BRISK | HARRIS |  |  |  |  |  |  |  |
+| ORB | HARRIS |  |  |  |  |  |  |  |
+| AKAZE | HARRIS |  |  |  |  |  |  |  |
+| SIFT | HARRIS |  |  |  |  |  |  |  |
