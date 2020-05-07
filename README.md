@@ -24,7 +24,7 @@ string detectorType = "ORB";
 string detectorType = "AKAZE";
 string detectorType = "SIFT";
 ```
-Following is an example of defining Shitomasi detector. The other types of detectors are also defined on similar lines.
+Following is an example of defining Shitomasi detector function. The other types of detectors are also defined on similar lines.
 
 ```
 void detKeypointsShiTomasi(vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool bVis)
@@ -65,4 +65,48 @@ void detKeypointsShiTomasi(vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool b
     }
 }
 ```
+Using following, we can any of the detectors can be used by selcting detetorType value
 
+```
+// Shi-Tomasi
+if (detectorType.compare("SHITOMASI") == 0)
+{
+  detKeypointsShiTomasi(keypoints, imgGray, false);
+}
+// Harris
+else if (detectorType.compare("HARRIS") == 0)
+{
+  detKeypointsHarris(keypoints, imgGray, false);
+}
+// Modern detector types, including FAST, BRISK, ORB, AKAZE, and SIFT
+else if (detectorType.compare("FAST")  == 0 ||
+         detectorType.compare("BRISK") == 0 ||
+         detectorType.compare("ORB")   == 0 ||
+         detectorType.compare("AKAZE") == 0 ||
+         detectorType.compare("SIFT")  == 0)
+ {
+   detKeypointsModern(keypoints, imgGray, detectorType, false);
+ }
+ // when specified detectorType is unsupported
+ else
+ {
+   throw invalid_argument(detectorType + " is not a valid detectorType");
+ }
+```
+
+## MP.2 Keypoint Removal
+
+```
+// Hardcoded bounding box to keep only keypoints on the preceding vehicle (Region of Interest)
+bool bFocusOnVehicle = true;
+cv::Rect vehicleRect(535, 180, 180, 150);
+if (bFocusOnVehicle)
+{
+   vector<cv::KeyPoint> filteredKeypoints;
+   for (auto kp : keypoints) 
+   {
+       if (vehicleRect.contains(kp.pt)) filteredKeypoints.push_back(kp);
+   }
+   keypoints = filteredKeypoints;
+}
+```
