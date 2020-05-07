@@ -12,8 +12,16 @@ if (dataBuffer.size() > dataBufferSize) dataBuffer.pop_front();
 assert(dataBuffer.size() <= dataBufferSize);
 ```
 ## MP.2 Keypoint Detection
-
+Implement detectors like HARRIS, FAST, BRISK, ORB, AKAZE, and SIFT & enable them by setting selectable string accordingly.
 ```
+// From the following, uncomment the one which is to be used and comment others
 
+string detectorType = "SHITOMASI";
+string detectorType = "HARRIS";
+string detectorType = "FAST";
+string detectorType = "BRISK";
+string detectorType = "ORB";
+string detectorType = "AKAZE";
+string detectorType = "SIFT";
 ```
 
