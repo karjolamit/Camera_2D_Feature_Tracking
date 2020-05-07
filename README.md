@@ -153,3 +153,89 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     extractor -> compute(img, keypoints, descriptors);
 }
 ```
+## MP.5 Descriptor Matching
+Implement FLANN matching as well as k-nearest neighbor selection. Both methods must be selectable using the respective strings in the main function. The following piece of code displays all the descriptor matchers implemented in this project.
+
+```
+void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::KeyPoint> &kPtsRef, cv::Mat &descSource, cv::Mat &descRef,
+                      std::vector<cv::DMatch> &matches, std::string descriptorCategory, std::string matcherType, std::string selectorType)
+{
+    bool crossCheck = false;
+    cv::Ptr<cv::DescriptorMatcher> matcher;
+    
+    // Brute force method
+    if (matcherType.compare("MAT_BF") == 0)
+    {
+        int normType;
+
+        // SIFT method
+        if (descriptorCategory.compare("DES_HOG") == 0)
+        {
+            normType = cv::NORM_L2;
+        }
+
+        // for all other binary descriptors
+        else if (descriptorCategory.compare("DES_BINARY") == 0)
+        {
+            normType = cv::NORM_HAMMING;
+        }
+        else {
+            throw invalid_argument(descriptorCategory + " is not a valid descriptorCategory");
+        }
+
+        matcher = cv::BFMatcher::create(normType, crossCheck);
+    }
+
+    // FLANN matching
+    else if (matcherType.compare("MAT_FLANN") == 0)
+    {
+        // SIFT method
+        if (descriptorCategory.compare("DES_HOG") == 0)
+        {
+            matcher = cv::FlannBasedMatcher::create();
+        }
+
+        // for all other binary descriptorTypes
+        else if (descriptorCategory.compare("DES_BINARY") == 0)
+        {
+            const cv::Ptr<cv::flann::IndexParams>& indexParams = cv::makePtr<cv::flann::LshIndexParams>(12, 20, 2);
+            matcher = cv::makePtr<cv::FlannBasedMatcher>(indexParams);
+        }
+        else {
+            throw invalid_argument(descriptorCategory + " is not a valid descriptorCategory");
+        }
+    }
+    else {
+        throw invalid_argument(matcherType + " is not a valid matcherType");
+    }
+}    
+```
+## MP.6 Descriptor Distance Ratio
+Use the K-Nearest-Neighbor matching to implement the descriptor distance ratio test, which looks at the ratio of best vs. second-best match to decide whether to keep an associated pair of keypoints.
+
+```
+// Implementing the nearest neighbor matching method (best match)
+if (selectorType.compare("SEL_NN") == 0)
+{
+   matcher->match(descSource, descRef, matches);
+ }    
+ // Implementing k nearest neighbors method (k=2)
+ else if (selectorType.compare("SEL_KNN") == 0)
+ {
+   int k = 2;
+   vector<vector<cv::DMatch>> knn_matches;
+   matcher->knnMatch(descSource, descRef, knn_matches, k);
+   
+   // Filter matches using descriptor distance ratio test (0.8 threshold suggested)
+   double minDescDistRatio = 0.8;
+   for (auto it : knn_matches) {
+   // The returned knn_matches vector contains some nested vectors with size less than 2 
+       if ( 2 == it.size() && (it[0].distance < minDescDistRatio * it[1].distance) ) {
+       matches.push_back(it[0]);
+     }
+  }
+  else {
+    throw invalid_argument(selectorType + " is not a valid selectorType");
+   }
+}
+```
