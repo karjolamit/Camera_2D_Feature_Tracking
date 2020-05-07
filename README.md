@@ -94,7 +94,7 @@ else if (detectorType.compare("FAST")  == 0 ||
  }
 ```
 
-## MP.2 Keypoint Removal
+## MP.3 Keypoint Removal
 Remove all keypoints outside of a pre-defined rectangle and only use inside points for feature tracking. Any point within 'if (vehicleRect.contains(kp.pt))' will be retained.
 ```
 // Hardcoded bounding box to keep only keypoints on the preceding vehicle (Region of Interest)
@@ -108,5 +108,48 @@ if (bFocusOnVehicle)
        if (vehicleRect.contains(kp.pt)) filteredKeypoints.push_back(kp);
    }
    keypoints = filteredKeypoints;
+}
+```
+## MP.4 Keypoint Descriptors
+Implement descriptors like ORB, BRIEF, HARRIS, FREAK, AKAZE, and SIFT & enable them by setting selectable string accordingly.
+The implementation method is same as defining and calling a detector method in task MP.2 
+
+```
+void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descriptors, string descriptorType)
+{
+   cv::Ptr<cv::DescriptorExtractor> extractor; 
+   if (descriptorType.compare("BRISK") == 0)
+   {
+      int threshold = 30;               // FAST/AGAST detection threshold score.
+      int octaves = 3;                  // detection octaves (use 0 to do single scale)
+      float patternScale = 1.0f;        // apply this scale to the pattern used for sampling the neighbourhood of a keypoint.
+      extractor = cv::BRISK::create(threshold, octaves, patternScale);
+    }
+    else if (descriptorType.compare("BRIEF") == 0)
+    {
+       extractor = cv::xfeatures2d::BriefDescriptorExtractor::create();
+    }
+    else if (descriptorType.compare("ORB") == 0)
+    {
+       extractor = cv::ORB::create();
+    }
+    else if (descriptorType.compare("FREAK") == 0)
+    {
+       extractor = cv::xfeatures2d::FREAK::create();
+    }
+    else if (descriptorType.compare("AKAZE") == 0)
+    {
+       extractor = cv::AKAZE::create();
+    }
+    else if (descriptorType.compare("SIFT") == 0)
+    {
+       extractor = cv::xfeatures2d::SIFT::create();
+    }
+    else
+    {
+       // when specified descriptorType is unsupported
+       throw invalid_argument(descriptorType + " is not a valid descriptorType");
+    }
+    extractor -> compute(img, keypoints, descriptors);
 }
 ```
