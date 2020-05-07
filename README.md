@@ -2,7 +2,7 @@
 
 ## Data Buffer Optimization
 Loading set of images using Data Buffer vector (Ring buffer). Adding new images to tail (right) and removing old images from head (left).
-![Plot for 1D FFT Range measurement](https://github.com/karjolamit/Radar-Target-Generation-and-Detetction/blob/master/Plot%20for%201D%20FFT%20Range%20measurement.png)
+![Ring_Data_Buffer (https://github.com/karjolamit/https://github.com/karjolamit/Camera_2D_Feature_Tracking/blob/master/Ring_Data_Buffer.png)
 ```
 DataFrame frame;
 frame.cameraImg = imgGray;
