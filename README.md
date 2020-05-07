@@ -95,7 +95,7 @@ else if (detectorType.compare("FAST")  == 0 ||
 ```
 
 ## MP.2 Keypoint Removal
-
+Remove all keypoints outside of a pre-defined rectangle and only use inside points for feature tracking. 
 ```
 // Hardcoded bounding box to keep only keypoints on the preceding vehicle (Region of Interest)
 bool bFocusOnVehicle = true;
