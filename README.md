@@ -319,59 +319,212 @@ Time required for keypoint detection and descriptor extraction.
 | SHITOMASI | SIFT | 15.7316 | 0.470592 | 16.2021 | 
 | SHITOMASI | SIFT | 12.0244 | 0.502133 | 12.5266 | 
 | SHITOMASI | SIFT | 15.5991 | 0.422178 | 16.0213 | 
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | FREAK |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| SHITOMASI | BRIEF |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | BRISK |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | SIFT |  |  |  |
-| HARRIS | ORB |  |  |  | 
-| HARRIS | FREAK |  |  |  |
-| HARRIS | BRIEF |  |  |  |
+| SHITOMASI | ORB | 21.5529 | 0.459044 | 22.012 |
+| SHITOMASI | ORB | 18.0554 | 0.374417 | 18.4298 |
+| SHITOMASI | ORB | 17.054 | 0.399398 | 17.4534 |
+| SHITOMASI | ORB | 16.7836 | 0.459618 | 17.2432 |
+| SHITOMASI | ORB | 15.5779 | 0.362314 | 15.9403 |
+| SHITOMASI | ORB | 16.8071 | 0.427296 | 17.2344 |
+| SHITOMASI | ORB | 17.0359 | 0.368791 | 17.4047 |
+| SHITOMASI | ORB | 16.5694 | 0.382373 | 16.9518 |
+| SHITOMASI | ORB | 15.7252 | 0.350452 | 16.0756 |
+| SHITOMASI | FREAK | 16.8901 | 0.527649 | 17.4177 |
+| SHITOMASI | FREAK | 17.2911 | 0.473072 | 17.7642 |
+| SHITOMASI | FREAK | 12.7285 | 0.471825 | 13.2003 |
+| SHITOMASI | FREAK | 11.9275 | 0.472993 | 12.4005 |
+| SHITOMASI | FREAK | 12.0041 | 0.452552 | 12.4566 |
+| SHITOMASI | FREAK | 12.0593 | 0.387981 | 12.4473 |
+| SHITOMASI | FREAK | 12.0784 | 0.401531 | 12.4799 |
+| SHITOMASI | FREAK | 11.8781 | 0.388446 | 12.2665 |
+| SHITOMASI | FREAK | 11.838 | 0.435893 | 12.2739 |
+| SHITOMASI | BRIEF | 17.6987 | 7.36804 | 25.0667 |
+| SHITOMASI | BRIEF | 18.3944 | 0.397624 | 18.7921 |
+| SHITOMASI | BRIEF | 17.9506 | 0.368199 | 18.3188 |
+| SHITOMASI | BRIEF | 17.2261 | 0.404574 | 17.6307 |
+| SHITOMASI | BRIEF | 15.6312 | 0.359683 | 15.9908 |
+| SHITOMASI | BRIEF | 16.5427 | 0.355996 | 16.8987 |
+| SHITOMASI | BRIEF | 17.3645 | 0.371467 | 17.7359 |
+| SHITOMASI | BRIEF | 16.9688 | 0.371575 | 17.3403 |
+| SHITOMASI | BRIEF | 16.7046 | 0.345939 | 17.0505 |
+| HARRIS | BRISK | 18.2993 | 0.23954 | 18.5389 |
+| HARRIS | BRISK | 19.1793 | 0.085311 | 19.2646 |
+| HARRIS | BRISK | 18.6764 | 0.150347 | 18.8267 |
+| HARRIS | BRISK | 18.3236 | 0.186497 | 18.5101 |
+| HARRIS | BRISK | 38.5627 | 0.176797 | 38.7395 |
+| HARRIS | BRISK | 17.3974 | 0.199732 |  17.5971|
+| HARRIS | BRISK | 20.6418 | 0.12516 | 20.767 |
+| HARRIS | BRISK | 18.4205 | 0.168315 | 18.5888 |
+| HARRIS | BRISK | 23.5975 | 0.207698 | 23.8051 |
+| HARRIS | SIFT | 17.5876 | 0.170662 | 17.7583 |
+| HARRIS | SIFT | 19.3157 | 0.126354 | 19.442 |
+| HARRIS | SIFT | 19.3777 | 0.088685 | 19.4663 |
+| HARRIS | SIFT | 18.8119 | 0.100681 | 18.9126 |
+| HARRIS | SIFT | 38.3559 | 0.135887 | 38.4917 |
+| HARRIS | SIFT | 16.9305 | 0.151526 | 17.082 |
+| HARRIS | SIFT | 20.5608 | 0.176257 | 20.737 |
+| HARRIS | SIFT | 19.3551 | 0.148628 | 19.5037 |
+| HARRIS | SIFT | 24.7814 | 0.157323 | 24.9387 |
+| HARRIS | ORB | 17.7508 | 0.171317 | 17.9221 | 
+| HARRIS | ORB | 18.54 | 0.0951 | 18.6351 | 
+| HARRIS | ORB | 18.1554 | 0.101276 | 18.2567 | 
+| HARRIS | ORB | 18.1972 | 0.142282 | 18.3395 | 
+| HARRIS | ORB | 37.7491 | 0.170737 | 37.9198 | 
+| HARRIS | ORB | 16.8466 | 0.167801 | 17.0144 | 
+| HARRIS | ORB | 21.1824 | 0.182322 | 21.3647 | 
+| HARRIS | ORB | 18.1493 | 0.17787 | 18.3272 | 
+| HARRIS | ORB | 23.4496 | 0.145925 | 23.5955 | 
+| HARRIS | FREAK | 17.3175 | 0.177895 | 17.4954 |
+| HARRIS | FREAK | 17.1821 | 0.110356 | 17.2925 |
+| HARRIS | FREAK | 13.33 | 0.13726 | 13.4673 |
+| HARRIS | FREAK | 13.2134 | 0.189617 | 13.4031 |
+| HARRIS | FREAK | 33.6382 | 0.30832 | 33.9465 |
+| HARRIS | FREAK | 12.4656 | 0.150676 | 12.6162 |
+| HARRIS | FREAK | 14.9118 | 0.148541 | 15.0603 |
+| HARRIS | FREAK | 13.5546 | 0.208598 | 13.7632 |
+| HARRIS | FREAK | 19.5708 | 0.187201 | 19.758 |
+| HARRIS | BRIEF | 18.114 | 0.141947 | 18.256 |
+| HARRIS | BRIEF | 18.783 | 0.077317 | 18.8603 |
+| HARRIS | BRIEF | 17.9862 | 0.12472 | 18.111 |
+| HARRIS | BRIEF | 18.3752 | 0.107121 | 18.4823 |
+| HARRIS | BRIEF | 37.7216 | 0.182259 | 37.9038 |
+| HARRIS | BRIEF | 16.8995 | 0.121237 | 17.0207 |
+| HARRIS | BRIEF | 20.5169 | 0.120932 | 20.6379 |
+| HARRIS | BRIEF | 18.1029 | 0.145753 | 18.2486 |
+| HARRIS | BRIEF | 23.5871 | 0.159954 | 23.747 |
+| FAST | BRISK |  |  |  |
+| FAST | BRISK |  |  |  |
+| FAST | BRISK |  |  |  |
+| FAST | BRISK |  |  |  |
+| FAST | BRISK |  |  |  |
+| FAST | BRISK |  |  |  |
+| FAST | BRISK |  |  |  |
+| FAST | BRISK |  |  |  |
 | FAST | BRISK |  |  |  |
 | FAST | SIFT |  |  |  |
+| FAST | SIFT |  |  |  |
+| FAST | SIFT |  |  |  |
+| FAST | SIFT |  |  |  |
+| FAST | SIFT |  |  |  |
+| FAST | SIFT |  |  |  |
+| FAST | SIFT |  |  |  |
+| FAST | SIFT |  |  |  |
+| FAST | SIFT |  |  |  |
 | FAST | ORB |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | FREAK |  |  |  
+| FAST | FREAK |  |  |  |
+| FAST | FREAK |  |  |  |
+| FAST | FREAK |  |  |  |
+| FAST | FREAK |  |  |  |
+| FAST | FREAK |  |  |  |
+| FAST | FREAK |  |  |  |
+| FAST | FREAK |  |  |  |
 | FAST | FREAK |  |  |  |
 | FAST | BRIEF |  |  |  |
+| FAST | BRIEF |  |  |  |
+| FAST | BRIEF |  |  |  |
+| FAST | BRIEF |  |  |  |
+| FAST | BRIEF |  |  |  |
+| FAST | BRIEF |  |  |  |
+| FAST | BRIEF |  |  |  |
+| FAST | BRIEF |  |  |  |
+| FAST | BRIEF |  |  |  |
+| BRISK | BRISK |  |  |  | 
+| BRISK | BRISK |  |  |  | 
+| BRISK | BRISK |  |  |  | 
+| BRISK | BRISK |  |  |  | 
+| BRISK | BRISK |  |  |  | 
+| BRISK | BRISK |  |  |  | 
+| BRISK | BRISK |  |  |  | 
+| BRISK | BRISK |  |  |  | 
 | BRISK | BRISK |  |  |  | 
 | BRISK | SIFT |  |  |  |
+| BRISK | SIFT |  |  |  |
+| BRISK | SIFT |  |  |  |
+| BRISK | SIFT |  |  |  |
+| BRISK | SIFT |  |  |  |
+| BRISK | SIFT |  |  |  |
+| BRISK | SIFT |  |  |  |
+| BRISK | SIFT |  |  |  |
+| BRISK | SIFT |  |  |  |
+| BRISK | ORB |  |  |  |
+| BRISK | ORB |  |  |  |
+| BRISK | ORB |  |  |  |
+| BRISK | ORB |  |  |  |
+| BRISK | ORB |  |  |  |
+| BRISK | ORB |  |  |  |
+| BRISK | ORB |  |  |  |
+| BRISK | ORB |  |  |  |
 | BRISK | ORB |  |  |  |
 | BRISK | FREAK |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | BRIEF |  |  |  |
+| BRISK | BRIEF |  |  |  |
+| BRISK | BRIEF |  |  |  |
+| BRISK | BRIEF |  |  |  |
+| BRISK | BRIEF |  |  |  |
+| BRISK | BRIEF |  |  |  |
+| BRISK | BRIEF |  |  |  |
+| BRISK | BRIEF |  |  |  |
 | BRISK | BRIEF |  |  |  |
 | ORB | BRISK |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | SIFT |  |  |  |
+| ORB | SIFT |  |  |  |
+| ORB | SIFT |  |  |  |
+| ORB | SIFT |  |  |  |
+| ORB | SIFT |  |  |  |
+| ORB | SIFT |  |  |  |
+| ORB | SIFT |  |  |  |
+| ORB | SIFT |  |  |  |
 | ORB | SIFT |  |  |  |
 | ORB | ORB |  |  |  |
+| ORB | ORB |  |  |  |
+| ORB | ORB |  |  |  |
+| ORB | ORB |  |  |  |
+| ORB | ORB |  |  |  |
+| ORB | ORB |  |  |  |
+| ORB | ORB |  |  |  |
+| ORB | ORB |  |  |  |
+| ORB | ORB |  |  |  |
 | ORB | FREAK |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | BRIEF |  |  |  |
+| ORB | BRIEF |  |  |  |
+| ORB | BRIEF |  |  |  |
+| ORB | BRIEF |  |  |  |
+| ORB | BRIEF |  |  |  |
+| ORB | BRIEF |  |  |  |
+| ORB | BRIEF |  |  |  |
+| ORB | BRIEF |  |  |  |
 | ORB | BRIEF |  |  |  |
 | AKAZE | BRISK |  |  |  |
 | AKAZE | SIFT |  |  |  |
