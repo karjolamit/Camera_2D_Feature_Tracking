@@ -245,4 +245,4 @@ Count the number of keypoints on the preceding vehicle for all 10 images for all
 
  | Detector Type | Image 0 | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Image 7 | Image 8 | Image 9 | Average |
  | ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
- | 258 | 259 | 555 |
+ | SHITOMASI | 95 | 88 | 80 | 90 | 82 | 79 | 85 | 86 | 82 | 84 | 85 |
