@@ -295,3 +295,94 @@ Count the number of matched keypoints for all 10 images using all possible combi
 | SIFT | SIFT | 82 | 81 | 85 | 93 | 90 | 81 | 82 | 102 | 104 |
 | SIFT | FREAK | 65 | 72 | 64 | 66 | 59 | 59 | 64 | 65 | 79 |
 | SIFT | BRIEF | 86 | 78 | 76 | 85 | 69 | 74 | 76 | 70 | 88 |
+
+## MP.9 Performance Evaluation 3
+Time required for keypoint detection and descriptor extraction. 
+
+| Detector Type | Descriptor Type | Detection Time | Description Time | Total Time |
+| ------------- | --------------- | -------------- | ---------------- | ---------- | 
+| SHITOMASI | BRISK | 18.0882 | 0.558094 | 18.6463 |  
+| SHITOMASI | BRISK | 18.7076 | 0.481847 | 19.1894 |  
+| SHITOMASI | BRISK | 17.8675 | 0.480884 | 18.3484 | 
+| SHITOMASI | BRISK | 16.7682 | 0.461885 | 17.2301 |  
+| SHITOMASI | BRISK | 17.6994 | 0.451701 | 18.1511 | 
+| SHITOMASI | BRISK | 17.6489 | 0.461644 | 18.1105 | 
+| SHITOMASI | BRISK | 17.0999 | 0.467073 | 17.567 | 
+| SHITOMASI | BRISK | 16.839 | 0.45153 | 17.2905 | 
+| SHITOMASI | BRISK | 16.6246 | 0.377672 | 17.0022 | 
+| SHITOMASI | SIFT | 11.7499 | 0.731261 | 12.4812 | 
+| SHITOMASI | SIFT | 16.833 | 0.528927 | 17.3619 | 
+| SHITOMASI | SIFT | 17.1126 | 0.522772 | 17.6353 | 
+| SHITOMASI | SIFT | 14.4156 | 0.469529 | 14.8851 | 
+| SHITOMASI | SIFT | 12.2233 | 0.630024 | 12.8534 | 
+| SHITOMASI | SIFT | 16.7057 | 0.484108 | 17.1898 | 
+| SHITOMASI | SIFT | 15.7316 | 0.470592 | 16.2021 | 
+| SHITOMASI | SIFT | 12.0244 | 0.502133 | 12.5266 | 
+| SHITOMASI | SIFT | 15.5991 | 0.422178 | 16.0213 | 
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | FREAK |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| SHITOMASI | BRIEF |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | BRISK |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | SIFT |  |  |  |
+| HARRIS | ORB |  |  |  | 
+| HARRIS | FREAK |  |  |  |
+| HARRIS | BRIEF |  |  |  |
+| FAST | BRISK |  |  |  |
+| FAST | SIFT |  |  |  |
+| FAST | ORB |  |  |  |
+| FAST | FREAK |  |  |  |
+| FAST | BRIEF |  |  |  |
+| BRISK | BRISK |  |  |  | 
+| BRISK | SIFT |  |  |  |
+| BRISK | ORB |  |  |  |
+| BRISK | FREAK |  |  |  |
+| BRISK | BRIEF |  |  |  |
+| ORB | BRISK |  |  |  |
+| ORB | SIFT |  |  |  |
+| ORB | ORB |  |  |  |
+| ORB | FREAK |  |  |  |
+| ORB | BRIEF |  |  |  |
+| AKAZE | BRISK |  |  |  |
+| AKAZE | SIFT |  |  |  |
+| AKAZE | ORB |  |  |  |
+| AKAZE | FREAK |  |  |  |
+| AKAZE | AKAZE |  |  |  |
+| AKAZE | BRIEF |  |  |  |
+| SIFT | BRISK |  |  |  |
+| SIFT | SIFT |  |  |  |
+| SIFT | FREAK |  |  |  |
+| SIFT | BRIEF |  |  |  |
+
+
+the TOP3 detector / descriptor combinations must be recommended as the best choice for our purpose of detecting keypoints on vehicles.
