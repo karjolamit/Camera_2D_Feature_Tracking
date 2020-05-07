@@ -243,12 +243,12 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
 ## Performance Evaluation 1
 Count the number of keypoints on the preceding vehicle for all 10 images for all the detectors implemented.
 
- | Detector Type | Image 0 | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Image 7 | Image 8 | Image 9 | Average |
- | ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
- | SHITOMASI | 95 | 88 | 80 | 90 | 82 | 79 | 85 | 86 | 82 | 84 | 85 |
- | HARRIS | 12 | 10 | 14 | 16 | 16 | 17 | 15 | 22 | 21 | 22 | 16 |
- | FAST | 256 | 243 | 241 | 239 | 215 | 251 | 248 | 243 | 247 | 246 | 243 |
- | BRISK | 171 | 176 | 157 | 176 | 174 | 188 | 173 | 171 | 184 | 185 | 175 |
- | ORB | 73 | 74 | 79 | 85 | 79 | 92 | 90 | 88 | 91 | 93 | 84 |
- | AKAZE | 137 | 125 | 129 | 129 | 131 | 132 | 142 | 146 | 144 | 146 | 136 |
- | SIFT | 64 | 66 | 62 | 66 | 59 | 64 | 64 | 67 | 80 | 82 | 67 |
+ | Detector Type | Image 0 | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Image 7 | Image 8 | Image 9 | Average | Neighborhood Size |
+ | ------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------------------------ |
+ | SHITOMASI | 125 | 118 | 123 | 120 | 120 | 113 | 114 | 123 | 111 | 112 | - | 4 |
+ | HARRIS | 17 | 14 | 19 | 22 | 26 | 47 | 18 | 33 | 27 | 35 | - | 6 |
+ | FAST | 419 | 427 | 404 | 423 | 386 | 414 | 418 | 406 | 396 | 401 | - | 7 |
+ | BRISK | 264 | 282 | 282 | 277 | 297 | 279 | 289 | 272 | 266 | 254 | - | 8.4 - 16.5484 |
+ | ORB |  |  |  |  |  |  |  |  |  |  |  |  |
+ | AKAZE |  |  |  |  |  |  |  |  |  |  |  |  |
+ | SIFT |  |  |  |  |  |  |  |  |  |  |  |  |
