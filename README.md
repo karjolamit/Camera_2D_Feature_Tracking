@@ -288,7 +288,7 @@ Count the number of matched keypoints for all 10 images using all possible combi
 | ORB | ORB |  |  |  |  |  |  |  |
 | AKAZE | ORB |  |  |  |  |  |  |  |
 | SIFT | ORB |  |  |  |  |  |  |  |
-| SHITOMASI | HARRIS |  |  |  |  |  |  |  |
+| SHITOMASI | HARRIS |  |  |  |  |  |  |  | 
 | HARRIS | HARRIS |  |  |  |  |  |  |  |
 | FAST | HARRIS |  |  |  |  |  |  |  |
 | BRISK | HARRIS |  |  |  |  |  |  |  |
