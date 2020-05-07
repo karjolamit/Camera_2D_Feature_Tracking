@@ -252,3 +252,5 @@ Count the number of keypoints on the preceding vehicle for all 10 images for all
  | ORB | 92 | 102 | 106 | 113 | 109 | 125 | 130 | 129 | 127 | 128 | 116 | 31 |
  | AKAZE | 166 | 157 | 161 | 155 | 163 | 164 | 173 | 175 | 177 | 179 | 168 | 8 |
  | SIFT | 138 | 132 | 124 | 137 | 134 | 140 | 137 | 148 | 159 | 137 | 139 | 1.89 - 5.10 |
+
+From above table, it is clearly evident that the FAST developed highest number of keypoint detections whereas HARRIS developed lowest number of keypoint detections.
