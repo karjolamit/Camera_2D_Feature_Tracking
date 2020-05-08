@@ -391,151 +391,235 @@ Time required for keypoint detection and descriptor extraction.
 | HARRIS | BRIEF | 20.5169 | 0.120932 | 20.6379 |
 | HARRIS | BRIEF | 18.1029 | 0.145753 | 18.2486 |
 | HARRIS | BRIEF | 23.5871 | 0.159954 | 23.747 |
-| FAST | BRISK |  |  |  |
-| FAST | BRISK |  |  |  |
-| FAST | BRISK |  |  |  |
-| FAST | BRISK |  |  |  |
-| FAST | BRISK |  |  |  |
-| FAST | BRISK |  |  |  |
-| FAST | BRISK |  |  |  |
-| FAST | BRISK |  |  |  |
-| FAST | BRISK |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | SIFT |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | ORB |  |  |  |
-| FAST | FREAK |  |  |  
-| FAST | FREAK |  |  |  |
-| FAST | FREAK |  |  |  |
-| FAST | FREAK |  |  |  |
-| FAST | FREAK |  |  |  |
-| FAST | FREAK |  |  |  |
-| FAST | FREAK |  |  |  |
-| FAST | FREAK |  |  |  |
-| FAST | FREAK |  |  |  |
-| FAST | BRIEF |  |  |  |
-| FAST | BRIEF |  |  |  |
-| FAST | BRIEF |  |  |  |
-| FAST | BRIEF |  |  |  |
-| FAST | BRIEF |  |  |  |
-| FAST | BRIEF |  |  |  |
-| FAST | BRIEF |  |  |  |
-| FAST | BRIEF |  |  |  |
-| FAST | BRIEF |  |  |  |
-| BRISK | BRISK |  |  |  | 
-| BRISK | BRISK |  |  |  | 
-| BRISK | BRISK |  |  |  | 
-| BRISK | BRISK |  |  |  | 
-| BRISK | BRISK |  |  |  | 
-| BRISK | BRISK |  |  |  | 
-| BRISK | BRISK |  |  |  | 
-| BRISK | BRISK |  |  |  | 
-| BRISK | BRISK |  |  |  | 
-| BRISK | SIFT |  |  |  |
-| BRISK | SIFT |  |  |  |
-| BRISK | SIFT |  |  |  |
-| BRISK | SIFT |  |  |  |
-| BRISK | SIFT |  |  |  |
-| BRISK | SIFT |  |  |  |
-| BRISK | SIFT |  |  |  |
-| BRISK | SIFT |  |  |  |
-| BRISK | SIFT |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | ORB |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | FREAK |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| BRISK | BRIEF |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | BRISK |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | SIFT |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | ORB |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | FREAK |  |  |  |
-| ORB | BRIEF |  |  |  |
-| ORB | BRIEF |  |  |  |
-| ORB | BRIEF |  |  |  |
-| ORB | BRIEF |  |  |  |
-| ORB | BRIEF |  |  |  |
-| ORB | BRIEF |  |  |  |
-| ORB | BRIEF |  |  |  |
-| ORB | BRIEF |  |  |  |
-| ORB | BRIEF |  |  |  |
-| AKAZE | BRISK |  |  |  |
-| AKAZE | SIFT |  |  |  |
-| AKAZE | ORB |  |  |  |
-| AKAZE | FREAK |  |  |  |
-| AKAZE | AKAZE |  |  |  |
-| AKAZE | BRIEF |  |  |  |
-| SIFT | BRISK |  |  |  |
-| SIFT | SIFT |  |  |  |
-| SIFT | FREAK |  |  |  |
-| SIFT | BRIEF |  |  |  |
+| FAST | BRISK | 2.27885 | 2.52872 | 4.80757 |
+| FAST | BRISK | 2.10689 | 2.43084 | 4.53773 |
+| FAST | BRISK | 2.16128 | 2.45608 | 4.61736 |
+| FAST | BRISK | 2.16094 | 2.23948 | 4.40043 |
+| FAST | BRISK | 2.17755 | 2.31374 | 4.49129 |
+| FAST | BRISK | 2.0353 | 2.40661 | 4.44191 |
+| FAST | BRISK | 2.15725 | 2.30369 | 4.46093 |
+| FAST | BRISK | 2.21179 | 2.39982 | 4.61161 |
+| FAST | BRISK | 2.14494 | 2.2666 | 4.41154 |
+| FAST | SIFT | 2.35532 | 5.01408 | 7.3694 |
+| FAST | SIFT | 2.08157 | 4.49641 | 6.57799 |
+| FAST | SIFT | 2.12329 | 4.58486 | 6.70815 |
+| FAST | SIFT | 2.02017 | 3.91231 | 5.93248 |
+| FAST | SIFT | 2.19452 | 4.27686 | 6.47139 |
+| FAST | SIFT | 2.20337 | 4.11131 | 6.31468 |
+| FAST | SIFT | 2.18671 | 4.27912 | 6.46583 |
+| FAST | SIFT | 2.22601 | 3.37203 | 5.59805 |
+| FAST | SIFT | 2.1528 | 4.31104 | 6.46384 |
+| FAST | ORB | 2.18843 | 3.09992 | 5.28835 |
+| FAST | ORB | 2.13253 | 2.29299 | 4.42552 |
+| FAST | ORB | 2.10614 | 2.24486 | 4.35101 |
+| FAST | ORB | 2.10108 | 2.19642 | 4.29749 |
+| FAST | ORB | 2.12479 | 2.11262 | 4.23742 |
+| FAST | ORB | 2.07301 | 2.23336 | 4.30637 |
+| FAST | ORB | 2.04615 | 2.19542 | 4.24156 |
+| FAST | ORB | 2.15183 | 2.11012 | 4.26195 |
+| FAST | ORB | 2.11646 | 2.09585 | 4.21232 |
+| FAST | FREAK | 2.23726 | 2.48811 | 4.72537 |  
+| FAST | FREAK | 2.07794 | 2.31345 | 4.39139 |
+| FAST | FREAK | 2.29824 | 2.4314 | 4.72964 |
+| FAST | FREAK | 2.06964 | 2.30565 | 4.37529 |
+| FAST | FREAK | 2.15681 | 2.94984 | 5.10665 |
+| FAST | FREAK | 2.18112 | 2.37242 | 4.55354 |
+| FAST | FREAK | 2.07899 | 2.47994 | 4.55354 |
+| FAST | FREAK | 2.14428 | 2.21617 | 4.36046 |
+| FAST | FREAK | 2.1597 | 2.17128 | 4.33098 |
+| FAST | BRIEF | 2.14541 | 2.93537 | 5.08078 |
+| FAST | BRIEF | 2.1042 | 2.30366 | 4.40785 |
+| FAST | BRIEF | 2.06488 | 2.2167 | 4.28158 |
+| FAST | BRIEF | 2.11795 | 2.14099 | 4.25894 |
+| FAST | BRIEF | 2.17487 | 2.11919 | 4.29406 |
+| FAST | BRIEF | 2.05503 | 2.19162 | 4.24665 |
+| FAST | BRIEF | 2.12311 | 2.17597 | 4.29908 |
+| FAST | BRIEF | 2.15707 | 2.05393 | 4.211 |
+| FAST | BRIEF | 2.15446 | 2.03347 | 4.18793 |
+| BRISK | BRISK | 384.096 | 1.29134 | 385.387 | 
+| BRISK | BRISK | 386.983 | 1.33444 | 388.317 | 
+| BRISK | BRISK | 383.294 | 1.163225 | 384.926 | 
+| BRISK | BRISK | 383.473 | 1.3166 | 384.79 | 
+| BRISK | BRISK | 372.518 | 1.41092 | 373.929 | 
+| BRISK | BRISK | 381.358 | 1.29837 | 382.656 | 
+| BRISK | BRISK | 378.297 | 1.40106 | 379.698 | 
+| BRISK | BRISK | 376.703 | 1.21853 | 377.921 | 
+| BRISK | BRISK | 378.354 | 1.1049 | 379.459 | 
+| BRISK | SIFT | 381.75 | 3.25568 | 385.006 |
+| BRISK | SIFT | 384.107 | 2.67564 | 386.783 |
+| BRISK | SIFT | 383.579 | 2.83622 | 386.415 |
+| BRISK | SIFT | 384.064 | 2.29683 | 386.361 |
+| BRISK | SIFT | 385.964 | 3.11723 | 389.081 |
+| BRISK | SIFT | 383.961 | 3.02547 | 386.987 |
+| BRISK | SIFT | 390.412 | 2.81946 | 393.231 |
+| BRISK | SIFT | 380.711 | 2.45809 | 383.169 |
+| BRISK | SIFT | 383.294 | 2.64124 | 385.935 |
+| BRISK | ORB | 368.406 | 1.226 | 369.632 |
+| BRISK | ORB | 371.016 | 1.21729 | 372.234 |
+| BRISK | ORB | 366.757 | 1.18557 | 367.943 |
+| BRISK | ORB | 366.234 | 1.2038 | 367.438 |
+| BRISK | ORB | 366.648 | 1.26402 | 367.912 |
+| BRISK | ORB | 373.725 | 1.20245 | 374.928 |
+| BRISK | ORB | 372.55 | 1.18792 | 373.738 |
+| BRISK | ORB | 366.598 | 1.12173 | 367.72 |
+| BRISK | ORB | 366.855 | 1.07629 | 367.931 |
+| BRISK | FREAK | 373.788 | 1.18144 | 374.969 |
+| BRISK | FREAK | 369.861 | 1.14974 | 371.011 |
+| BRISK | FREAK | 369.952 | 1.16672 | 371.119 |
+| BRISK | FREAK | 377.511 | 1.21863 | 378.73 |
+| BRISK | FREAK | 373.133 | 1.14651 | 374.28 |
+| BRISK | FREAK | 367.627 | 1.15313 | 368.78 |
+| BRISK | FREAK | 367.722 | 1.13272 | 368.855 |
+| BRISK | FREAK | 366.382 | 1.04738 | 367.43 |
+| BRISK | FREAK | 369.323 | 0.99643 | 370.32 |
+| BRISK | BRIEF | 375.161 | 1.19097 | 376.352 |
+| BRISK | BRIEF | 375.428 | 1.18698 | 376.615 |
+| BRISK | BRIEF | 374.164 | 1.29344 | 375.458 |
+| BRISK | BRIEF | 369.025 | 1.27271 | 370.298 |
+| BRISK | BRIEF | 369.731 | 1.41471 | 371.146 |
+| BRISK | BRIEF | 376.034 | 1.28794 | 377.322 |
+| BRISK | BRIEF | 371.353 | 1.21569 | 372.569 |
+| BRISK | BRIEF | 372.611 | 1.15407 | 373.765 |
+| BRISK | BRIEF | 368.826 | 1.11711 | 369.944 |
+| ORB | BRISK | 8.27133 | 0.41059 | 8.68192 |
+| ORB | BRISK | 8.64094 | 0.315269 | 8.9562 |
+| ORB | BRISK | 7.31895 | 0.39266 | 7.71161 |
+| ORB | BRISK | 7.53117 | 0.448899 | 7.98006 |
+| ORB | BRISK | 7.45703 | 0.371798 | 7.82883 |
+| ORB | BRISK | 7.7517 | 0.409414 | 8.16111 |
+| ORB | BRISK | 8.42251 | 0.412985 | 8.83549 |
+| ORB | BRISK | 7.76418 | 0.522109 | 8.28269 |
+| ORB | BRISK | 8.59146 | 0.414037 | 9.0055 |
+| ORB | SIFT | 7.57025 | 0.388453 | 7.9587 |
+| ORB | SIFT | 8.23043 | 0.402443 | 8.63287 |
+| ORB | SIFT | 7.6069 | 0.487275 | 8.09418 |
+| ORB | SIFT | 7.97219 | 0.608296 | 8.58048 |
+| ORB | SIFT | 7.44699 | 0.522933 | 7.96992 |
+| ORB | SIFT | 7.82048 | 0.612691 | 8.43317 |
+| ORB | SIFT | 7.95474 | 0.685999 | 8.64074 |
+| ORB | SIFT | 7.95987 | 0.777506 | 8.73738 |
+| ORB | SIFT | 7.98711 | 0.644184 | 8.63129 |
+| ORB | ORB | 7.92491 | 3.78587 | 11.7108 |
+| ORB | ORB | 8.14426 | 0.496772 | 8.64103 |
+| ORB | ORB | 7.67519 | 0.347672 | 8.02286 |
+| ORB | ORB | 7.38037 | 0.384949 | 7.76532 |
+| ORB | ORB | 7.37435 | 0.383176 | 7.75752 |
+| ORB | ORB | 7.68234 | 0.443866 | 8.12621 |
+| ORB | ORB | 7.79095 | 0.41868 | 8.20963 |
+| ORB | ORB | 7.36014 | 0.401922 | 7.76206 |
+| ORB | ORB | 7.79095 | 0.451838 | 8.96641 |
+| ORB | FREAK | 8.58662 | 0.279452 | 8.86607 |
+| ORB | FREAK | 7.80272 | 0.211074 | 8.01379 |
+| ORB | FREAK | 7.40833 | 0.313755 | 7.72208 |
+| ORB | FREAK | 7.47014 | 0.219333 | 7.68947 |
+| ORB | FREAK | 7.48631 | 0.240278 | 7.72659 |
+| ORB | FREAK | 7.41132 | 0.260363 | 7.67168 |
+| ORB | FREAK | 7.42458 | 0.251345 | 7.67593 |
+| ORB | FREAK | 7.66387 | 0.257967 | 7.92184 |
+| ORB | FREAK | 7.65352 | 0.267107 | 7.92063 |
+| ORB | BRIEF | 8.77225 | 0.422916 | 9.19516 |
+| ORB | BRIEF | 8.21333 | 0.318287 | 8.53162 |
+| ORB | BRIEF | 7.421 | 0.326663 | 7.74766 |
+| ORB | BRIEF | 7.48958 | 0.388515 | 7.8781 |
+| ORB | BRIEF | 7.44991 |0.366591  | 7.81651 |
+| ORB | BRIEF | 7.42039 | 0.392069 | 7.81246 |
+| ORB | BRIEF | 7.83177 | 0.382792 | 8.21457 |
+| ORB | BRIEF | 7.82049 | 0.382469 | 8.20296 |
+| ORB | BRIEF | 8.552 | 0.387784 | 8.93978 |
+| AKAZE | BRISK | 91.1065 | 0.621303 | 91.7278 |
+| AKAZE | BRISK | 85.0008 | 0.713556 | 85.7144 |
+| AKAZE | BRISK | 83.98 | 0.59437 | 84.5744 |
+| AKAZE | BRISK | 91.4649 | 0.583762 | 92.0487 |
+| AKAZE | BRISK | 90.9958 | 0.576727 | 91.5726 |
+| AKAZE | BRISK | 90.2266 | 0.702051 | 90.9287 |
+| AKAZE | BRISK | 85.1975 | 0.646576 | 85.844 |
+| AKAZE | BRISK | 93.2309 | 0.779683 | 94.0106 |
+| AKAZE | BRISK | 85.4779 | 0.678123 | 86.1561 |
+| AKAZE | SIFT | 84.3524 | 1.01345 | 85.3658 |
+| AKAZE | SIFT | 92.1947 | 0.958694 | 93.1534 |
+| AKAZE | SIFT | 87.0436 | 0.695435 | 87.7391 |
+| AKAZE | SIFT | 90.0693 | 0.854863 | 90.9241 |
+| AKAZE | SIFT | 88.0069 | 0.729106 | 88.736 |
+| AKAZE | SIFT | 80.0619 | 1.02719 | 81.0891 |
+| AKAZE | SIFT | 80.4279 | 0.799904 | 81.2296 |
+| AKAZE | SIFT | 79.0344 | 1.08956 | 80.124 |
+| AKAZE | SIFT | 85.4055 | 0.881244 | 86.2867 |
+| AKAZE | ORB | 87.7415 | 0.584345 | 88.3258 |
+| AKAZE | ORB | 87.3345 | 0.558069 | 87.8926 |
+| AKAZE | ORB | 82.9088 | 0.529649 | 83.4384 |
+| AKAZE | ORB | 89.9356 | 0.517251 | 90.4528 |
+| AKAZE | ORB | 85.0691 | 0.558913 | 85.628 |
+| AKAZE | ORB | 82.1256 | 0.59063 | 82.7162 |
+| AKAZE | ORB | 88.6616 | 0.593602 | 89.2552 |
+| AKAZE | ORB | 90.6514 | 0.624375 | 91.2752 |
+| AKAZE | ORB | 84.3908 | 0.650172 | 85.041 |
+| AKAZE | FREAK | 85.4262 | 0.618818 | 86.0451 |
+| AKAZE | FREAK | 89.4448 | 0.569168 | 90.014 |
+| AKAZE | FREAK | 72.2262 | 0.575073 | 72.8012 |
+| AKAZE | FREAK | 71.1157 | 0.58822 | 71.7039 |
+| AKAZE | FREAK | 77.7198 | 0.637659 | 78.3574 |
+| AKAZE | FREAK | 68.5675 | 0.604312 | 69.1718 |
+| AKAZE | FREAK | 73.2304 | 0.713459 | 73.9438 |
+| AKAZE | FREAK | 74.5598 | 0.647722 | 75.2075 |
+| AKAZE | FREAK | 74.1285 | 0.669831 | 74.7983 |
+| AKAZE | AKAZE | 74.7486 | 0.657888 | 75.4064 |
+| AKAZE | AKAZE | 84.2437 | 0.600763 | 84.8445 |
+| AKAZE | AKAZE | 82.7939 | 0.570724 | 83.3646 |
+| AKAZE | AKAZE | 78.1789 | 0.578843 | 78.7578 |
+| AKAZE | AKAZE | 87.6659 | 0.664232 | 88.3302 |
+| AKAZE | AKAZE | 83.4093 | 0.663689 | 84.073 |
+| AKAZE | AKAZE | 82.5089 | 0.672959 | 83.1819 |
+| AKAZE | AKAZE | 78.6007 | 0.679143 | 79.2799 |
+| AKAZE | AKAZE | 80.7148 | 0.717357 | 81.4321 |
+| AKAZE | BRIEF | 92.2412 | 0.604102 | 92.8453 |
+| AKAZE | BRIEF | 84.8899 | 0.515478 | 85.4054 |
+| AKAZE | BRIEF | 90.1345 | 0.536594 | 90.671 |
+| AKAZE | BRIEF | 89.6698 | 0.545557 | 90.2154 |
+| AKAZE | BRIEF | 84.1295 | 0.539823 | 84.6694 |
+| AKAZE | BRIEF | 83.7279 | 0.544556 | 84.2724 |
+| AKAZE | BRIEF | 83.3214 | 0.583044 | 83.9044 |
+| AKAZE | BRIEF | 84.9991 | 0.587727 | 85.5868 |
+| AKAZE | BRIEF | 87.881 | 0.631628 | 88.5126 |
+| SIFT | BRISK | 135.121 | 0.532099 | 135.653 |
+| SIFT | BRISK | 126.589 | 0.481522 | 127.071 |
+| SIFT | BRISK | 103.009 | 0.506925 | 103.515 |
+| SIFT | BRISK | 101.998 | 0.468628 | 102.467 |
+| SIFT | BRISK | 104.917 | 0.476771 | 105.394 |
+| SIFT | BRISK | 102.029 | 0.512564 | 102.541 |
+| SIFT | BRISK | 100.16 | 0.503186 | 100.663 |
+| SIFT | BRISK | 104.278 | 0.568011 | 104.846 |
+| SIFT | BRISK | 104.237 | 0.538255 | 104.775 |
+| SIFT | SIFT | 99.6419 | 0.676649 | 100.319 |
+| SIFT | SIFT | 115.241 | 0.576869 | 115.818 |
+| SIFT | SIFT | 94.8269 | 0.553969 | 95.3809 |
+| SIFT | SIFT | 96.6686 | 0.546637 | 97.2152 |
+| SIFT | SIFT | 102.924 | 0.55249 | 103.476 |
+| SIFT | SIFT | 99.8496 | 0.618809 | 100.468 |
+| SIFT | SIFT | 99.6486 | 0.596442 | 100.245 |
+| SIFT | SIFT | 98.2274 | 0.715122 | 98.9425 |
+| SIFT | SIFT | 101.132 | 0.71257 | 101.845 |
+| SIFT | FREAK | 135.5 | 0.560221 | 136.06 |
+| SIFT | FREAK | 135.98 | 0.440238 | 136.421 |
+| SIFT | FREAK | 128.081 | 0.439205 | 128.521 |
+| SIFT | FREAK | 127.934 | 0.4579 | 128.392 |
+| SIFT | FREAK | 127.608 | 0.453994 | 128.062 |
+| SIFT | FREAK | 132.987 | 0.475086 | 133.463 |
+| SIFT | FREAK | 127.062 | 0.479452 | 127.542 |
+| SIFT | FREAK | 128.472 | 0.530203 | 129.002 |
+| SIFT | FREAK | 128.558 | 0.554995 | 129.113 |
+| SIFT | BRIEF | 142.513 | 0.527748 | 143.04 |
+| SIFT | BRIEF | 133.356 | 0.43725 | 133.973 |
+| SIFT | BRIEF | 135.841 | 0.446556 | 136.287 |
+| SIFT | BRIEF | 132.896 | 0.437383 | 133.333 |
+| SIFT | BRIEF | 136.033 | 0.437899 | 136.471 |
+| SIFT | BRIEF | 138.873 | 0.482608 | 139.355 |
+| SIFT | BRIEF | 139.131 | 0.448676 | 139.58 |
+| SIFT | BRIEF | 136.731 | 0.526625 | 137.258 |
+| SIFT | BRIEF | 133.428 | 0.500759 | 133.929 |
 
+From above table, the TOP 3 detector/descriptor combinations are as follows:
+1. FAST detectors and BRIEF descriptors
+2. FAST detectors and ORB descriptors
+3. FAST detectors and SIFT descriptors
 
-the TOP3 detector / descriptor combinations must be recommended as the best choice for our purpose of detecting keypoints on vehicles.
+There are two disadvantages to SIFT: patent royalties and the worst-case execution time. For the combination, some SIFT runtimes slipped to 6 ms total time. The distribution of runtimes for FAST with ORB and BRIEF descriptors was more tightly bound within 3 ms.
