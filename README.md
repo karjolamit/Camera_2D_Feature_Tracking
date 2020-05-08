@@ -65,7 +65,7 @@ void detKeypointsShiTomasi(vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool b
     }
 }
 ```
-Using following, any of the detectors can be used by selcting 'detetorType' 
+Using following, any of the detectors can be used by selcting 'detectorType' 
 
 ```
 // Shi-Tomasi
