@@ -296,6 +296,8 @@ Count the number of matched keypoints for all 10 images using all possible combi
 | SIFT | FREAK | 65 | 72 | 64 | 66 | 59 | 59 | 64 | 65 | 79 |
 | SIFT | BRIEF | 86 | 78 | 76 | 85 | 69 | 74 | 76 | 70 | 88 |
 
+NMP stands for Number of Matching Points
+
 ## MP.9 Performance Evaluation 3
 Time required for keypoint detection and descriptor extraction. 
 
@@ -617,9 +619,9 @@ Time required for keypoint detection and descriptor extraction.
 | SIFT | BRIEF | 136.731 | 0.526625 | 137.258 |
 | SIFT | BRIEF | 133.428 | 0.500759 | 133.929 |
 
-From above table, the TOP 3 detector/descriptor combinations are as follows:
+From above tables (MP.8 and MP.9), the TOP 3 detector/descriptor combinations are as follows:
 1. FAST detectors and BRIEF descriptors
 2. FAST detectors and ORB descriptors
 3. FAST detectors and SIFT descriptors
 
-There are two disadvantages to SIFT: patent royalties and the worst-case execution time. For the combination, some SIFT runtimes slipped to 6 ms total time. The distribution of runtimes for FAST with ORB and BRIEF descriptors was more tightly bound within 3 ms.
+It is strongly evident that the number of matching keypoints with FAST detectors is around 300+ for its combination with either of the three descriptors (BRIEF,ORB and SIFT). Also, the time required for detecting and descripting the keypoints and its feature is less than 5 ms. Thus any of the above 3 combination is strongly recommended as best choice for the purpose of detecting keypoints on vehicles.
