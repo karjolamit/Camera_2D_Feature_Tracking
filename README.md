@@ -624,4 +624,4 @@ From above tables (MP.8 and MP.9), the TOP 3 detector/descriptor combinations ar
 2. FAST detectors and ORB descriptors
 3. FAST detectors and SIFT descriptors
 
-It is strongly evident that the number of matching keypoints with FAST detectors is around 300+ for its combination with either of the three descriptors (BRIEF,ORB and SIFT). Also, the time required for detecting and descripting the keypoints and its feature is less than 5 ms. Thus any of the above 3 combination is strongly recommended as best choice for the purpose of detecting keypoints on vehicles.
+It is strongly evident that the number of matching keypoints with FAST detectors is around 300+ for its combination with either of the three descriptors (BRIEF,ORB and SIFT). Also, the time required for detecting and descripting the keypoints & its feature is less than 8 ms for all the 3 combinations. Thus any of the above 3 combination is recommended as best choice for the purpose of detecting keypoints on vehicles.
