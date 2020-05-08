@@ -155,8 +155,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
 ```
 ## MP.5 Descriptor Matching & MP.6 Descriptor Distance Ratio
 Implement FLANN matching as well as k-nearest neighbor selection. Both methods must be selectable using the respective strings in the main function. The following piece of code displays the descriptor matchers implemented in this project. 
-Use the K-Nearest-Neighbor matching to implement the descriptor distance ratio test, which looks at the ratio of best vs. second-best match to decide whether to keep an associated pair of keypoints.
-
+Implementing the K-Nearest-Neighbor matching to check the descriptor distance ratio test.
 ```
 void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::KeyPoint> &kPtsRef, cv::Mat &descSource, cv::Mat &descRef,
                       std::vector<cv::DMatch> &matches, std::string descriptorCategory, std::string matcherType, std::string selectorType)
@@ -229,7 +228,7 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
         // Filter matches using descriptor distance ratio test
         double minDescDistRatio = 0.8;
         for (auto it : knn_matches) {
-            // The returned knn_matches vector contains some nested vectors with size less than
+            // The returned knn_matches vector contains some nested vectors with size less than 2
             if ( 2 == it.size() && (it[0].distance < minDescDistRatio * it[1].distance) ) {
                 matches.push_back(it[0]);
             }
@@ -253,10 +252,12 @@ Count the number of keypoints on the preceding vehicle for all 10 images for all
 | AKAZE | 166 | 157 | 161 | 155 | 163 | 164 | 173 | 175 | 177 | 179 | 168 | 8 |
 | SIFT | 138 | 132 | 124 | 137 | 134 | 140 | 137 | 148 | 159 | 137 | 139 | 1.89 - 5.10 |
 
-From above table, it is clearly evident that the FAST developed highest number of keypoint detections whereas HARRIS developed lowest number of keypoint detections.
+From above table, it is clearly evident that the FAST developed highest number of keypoint detections whereas HARRIS developed lowest number of keypoint detections for given set of images.
 
 ## MP.8 Performance Evaluation 2
 Count the number of matched keypoints for all 10 images using all possible combinations of detectors and descriptors. In the matching step, the BF approach is used with the descriptor distance ratio set to 0.8.
+
+NMP stands for Number of Matching Points
 
 | Detector Type | Descriptor Type | NMP Img 0 | NMP Img 1 | NMP Img 2 | NMP Img 3 | NMP Img 4 | NMP Img 5 | NMP Img 6 | NMP Img 7 | NMP Img 8 |
 | ------------- | --------------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -295,8 +296,6 @@ Count the number of matched keypoints for all 10 images using all possible combi
 | SIFT | SIFT | 82 | 81 | 85 | 93 | 90 | 81 | 82 | 102 | 104 |
 | SIFT | FREAK | 65 | 72 | 64 | 66 | 59 | 59 | 64 | 65 | 79 |
 | SIFT | BRIEF | 86 | 78 | 76 | 85 | 69 | 74 | 76 | 70 | 88 |
-
-NMP stands for Number of Matching Points
 
 ## MP.9 Performance Evaluation 3
 Time required for keypoint detection and descriptor extraction. 
